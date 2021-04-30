@@ -32,8 +32,6 @@ namespace Password_Manager
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.SearchButton = new System.Windows.Forms.Button();
             this.SearchBar = new System.Windows.Forms.TextBox();
-            this.SaveAsButton = new System.Windows.Forms.Button();
-            this.SaveButton = new System.Windows.Forms.Button();
             this.OpenButton = new System.Windows.Forms.Button();
             this.NewButton = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -43,6 +41,8 @@ namespace Password_Manager
             this.DelButton = new System.Windows.Forms.Button();
             this.AddButton = new System.Windows.Forms.Button();
             this.PasswordsView = new System.Windows.Forms.ListView();
+            this.DecryptButton = new System.Windows.Forms.Button();
+            this.EncryptButton = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -53,8 +53,8 @@ namespace Password_Manager
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.SearchButton);
             this.groupBox1.Controls.Add(this.SearchBar);
-            this.groupBox1.Controls.Add(this.SaveAsButton);
-            this.groupBox1.Controls.Add(this.SaveButton);
+            this.groupBox1.Controls.Add(this.DecryptButton);
+            this.groupBox1.Controls.Add(this.EncryptButton);
             this.groupBox1.Controls.Add(this.OpenButton);
             this.groupBox1.Controls.Add(this.NewButton);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
@@ -83,26 +83,6 @@ namespace Password_Manager
             this.SearchBar.Size = new System.Drawing.Size(191, 20);
             this.SearchBar.TabIndex = 4;
             this.SearchBar.Text = "Введите ваш запрос здесь";
-            // 
-            // SaveAsButton
-            // 
-            this.SaveAsButton.Enabled = false;
-            this.SaveAsButton.Location = new System.Drawing.Point(324, 12);
-            this.SaveAsButton.Name = "SaveAsButton";
-            this.SaveAsButton.Size = new System.Drawing.Size(100, 23);
-            this.SaveAsButton.TabIndex = 3;
-            this.SaveAsButton.Text = "Сохранить как";
-            this.SaveAsButton.UseVisualStyleBackColor = true;
-            // 
-            // SaveButton
-            // 
-            this.SaveButton.Enabled = false;
-            this.SaveButton.Location = new System.Drawing.Point(218, 12);
-            this.SaveButton.Name = "SaveButton";
-            this.SaveButton.Size = new System.Drawing.Size(100, 23);
-            this.SaveButton.TabIndex = 2;
-            this.SaveButton.Text = "Сохранить";
-            this.SaveButton.UseVisualStyleBackColor = true;
             // 
             // OpenButton
             // 
@@ -206,6 +186,26 @@ namespace Password_Manager
             this.PasswordsView.TabIndex = 3;
             this.PasswordsView.UseCompatibleStateImageBehavior = false;
             // 
+            // DecryptButton
+            // 
+            this.DecryptButton.Enabled = false;
+            this.DecryptButton.Location = new System.Drawing.Point(324, 12);
+            this.DecryptButton.Name = "DecryptButton";
+            this.DecryptButton.Size = new System.Drawing.Size(100, 23);
+            this.DecryptButton.TabIndex = 3;
+            this.DecryptButton.Text = "Расшифровать";
+            this.DecryptButton.UseVisualStyleBackColor = true;
+            // 
+            // EncryptButton
+            // 
+            this.EncryptButton.Enabled = false;
+            this.EncryptButton.Location = new System.Drawing.Point(218, 12);
+            this.EncryptButton.Name = "EncryptButton";
+            this.EncryptButton.Size = new System.Drawing.Size(100, 23);
+            this.EncryptButton.TabIndex = 2;
+            this.EncryptButton.Text = "Зашифровать";
+            this.EncryptButton.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -230,8 +230,6 @@ namespace Password_Manager
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button SearchButton;
         private System.Windows.Forms.TextBox SearchBar;
-        private System.Windows.Forms.Button SaveAsButton;
-        private System.Windows.Forms.Button SaveButton;
         private System.Windows.Forms.Button OpenButton;
         private System.Windows.Forms.Button NewButton;
         private System.Windows.Forms.GroupBox groupBox2;
@@ -241,6 +239,8 @@ namespace Password_Manager
         private System.Windows.Forms.Button DelButton;
         private System.Windows.Forms.Button AddButton;
         private System.Windows.Forms.ListView PasswordsView;
+        private System.Windows.Forms.Button DecryptButton;
+        private System.Windows.Forms.Button EncryptButton;
     }
 }
 

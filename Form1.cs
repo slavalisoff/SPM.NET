@@ -13,12 +13,14 @@ namespace Password_Manager
 {
     public partial class Form1 : Form
     {
+        #region Variables
         public static SQLiteConnection db;
         bool isOpen = false;
         Password[] passwords;
         string path;
+        #endregion
 
-        //DB methods
+        #region DB Methods
         private void AddPasswordToDB(Password password)
         {
             SQLiteCommand sqlcom = db.CreateCommand();
@@ -74,8 +76,9 @@ namespace Password_Manager
                 PasswordsView.Items.Add (passwords[i].name);
             }
         }
+        #endregion
 
-        //Listeners
+        #region Listeners
         public Form1 ()
         {
             InitializeComponent ();
@@ -136,6 +139,7 @@ namespace Password_Manager
                         AddButton.Enabled = false;
                         DelButton.Enabled = false;
                         EVButton.Enabled = false;
+                        DecryptButton.Enabled = true;
                     }
                 }
             }
@@ -181,6 +185,7 @@ namespace Password_Manager
                         AddButton.Enabled = true;
                         DelButton.Enabled = true;
                         EVButton.Enabled = true;
+                        DecryptButton.Enabled = true;
                     }
                     catch (Exception ex)
                     {
@@ -241,5 +246,6 @@ namespace Password_Manager
             AboutWindow aw = new AboutWindow();
             aw.ShowDialog();
         }
+        #endregion
     }
 }
