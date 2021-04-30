@@ -1,6 +1,7 @@
 # SPM.NET
 
-SPM.NET is the Simple Password Manager implementation for .NET platform
+SPM.NET is the Simple Password Manager implementation for .NET platform.
+
 Implementation for Java platform here: https://github.com/TheKostins/jSPM
 
 ## What works:
